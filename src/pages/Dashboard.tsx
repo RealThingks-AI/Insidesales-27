@@ -29,6 +29,7 @@ const Dashboard = () => {
 
   return (
     <div className="flex flex-col h-full overflow-hidden">
+      <TodaysTasksPopup />
       {/* Header */}
       <div className="flex-shrink-0 h-16 border-b bg-background px-6 flex items-center">
         <div className="flex items-center justify-between w-full">
