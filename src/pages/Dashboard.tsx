@@ -1,5 +1,6 @@
 import YearlyRevenueSummary from "@/components/YearlyRevenueSummary";
 import { UserDashboard } from "@/components/dashboard/UserDashboard";
+import { TodaysTasksPopup } from "@/components/dashboard/TodaysTasksPopup";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { NotificationBell } from "@/components/NotificationBell";
 import { Button } from "@/components/ui/button";
@@ -28,6 +29,7 @@ const Dashboard = () => {
 
   return (
     <div className="flex flex-col h-full overflow-hidden">
+      <TodaysTasksPopup />
       {/* Header */}
       <div className="flex-shrink-0 h-16 border-b bg-background px-6 flex items-center">
         <div className="flex items-center justify-between w-full">
