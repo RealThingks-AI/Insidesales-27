@@ -164,19 +164,19 @@ export function TodaysTasksPopup() {
           className="sm:max-w-[560px] p-0 gap-0 overflow-hidden border-primary/20 shadow-2xl"
         >
           {/* Header */}
-          <DialogHeader className="px-6 pt-6 pb-4">
+          <DialogHeader className="px-6 pt-5 pb-4 bg-gradient-to-r from-primary/10 via-primary/5 to-transparent border-b border-primary/10">
             <div className="flex items-center gap-3">
-              <div className="h-10 w-10 rounded-lg bg-primary/10 flex items-center justify-center">
+              <div className="h-11 w-11 rounded-xl bg-primary/15 flex items-center justify-center shadow-sm">
                 <CalendarDays className="h-5 w-5 text-primary" />
               </div>
               <div>
-                <DialogTitle className="text-lg font-semibold">Today's Agenda</DialogTitle>
+                <DialogTitle className="text-lg font-semibold text-foreground">Today's Agenda</DialogTitle>
                 <p className="text-sm text-muted-foreground">
                   {format(new Date(), 'EEEE, MMMM d, yyyy')}
                 </p>
               </div>
               {totalCount > 0 && (
-                <Badge variant="secondary" className="ml-auto text-xs">
+                <Badge className="ml-auto text-xs bg-primary/10 text-primary border-primary/20 hover:bg-primary/15">
                   {totalCount} item{totalCount !== 1 ? 's' : ''}
                 </Badge>
               )}
