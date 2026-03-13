@@ -159,10 +159,9 @@ export function TodaysTasksPopup() {
 
   return (
     <>
-      <Dialog open={open} onOpenChange={(v) => { if (!v) handleClose(); }} modal={false}>
+      <Dialog open={open} onOpenChange={(v) => { if (!v) handleClose(); }}>
         <DialogContent
-          className="sm:max-w-[560px] p-0 gap-0 overflow-hidden"
-          onPointerDownOutside={(e) => e.preventDefault()}
+          className="sm:max-w-[560px] p-0 gap-0 overflow-hidden border-primary/20 shadow-2xl"
         >
           {/* Header */}
           <DialogHeader className="px-6 pt-6 pb-4">
