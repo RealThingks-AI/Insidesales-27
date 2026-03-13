@@ -1,5 +1,6 @@
 import YearlyRevenueSummary from "@/components/YearlyRevenueSummary";
 import { UserDashboard } from "@/components/dashboard/UserDashboard";
+import { TodaysTasksPopup } from "@/components/dashboard/TodaysTasksPopup";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { NotificationBell } from "@/components/NotificationBell";
 import { Button } from "@/components/ui/button";
